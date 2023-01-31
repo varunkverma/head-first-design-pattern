@@ -14,4 +14,9 @@
 ->  Design Patterns give you a shared vocabulary with other developers. Once you've got the vocabulary, you can more easilty communicate with other developers and inspire those who don't know patterns to start learning them. It also elevates you thinking about architecture by letting you "think at the pattern level", not the nitty-gritty object level.
     When you communicate with another developer or your team using patterns, you are communicating not just a pattern name but a whole set of qualities, characteristics, and constraints that the pattern represents.
     
-->  Design patterns don't go directly into your code, they first go into your Brain. Once you've loaded your brain with a good working knowledge of patterns, you can then start to apply them to your new designs, and rework your old code when you find it's degrading into an inflexible mess. 
+->  Design patterns don't go directly into your code, they first go into your Brain. Once you've loaded your brain with a good working knowledge of patterns, you can then start to apply them to your new designs, and rework your old code when you find it's degrading into an inflexible mess.
+
+-> Design patterns are higher level than libraries. Design patterns tell us how to structure classes and objects to solve certain problems, and it is our job to adapt those designs to fit our particular application.
+
+-> Knowing concepts like abstraction, inheritance and polymorphism doesn't make you a good OO designer. A design guru thinks about how to create flexible designs that are maintainable and can cope with change.
+
