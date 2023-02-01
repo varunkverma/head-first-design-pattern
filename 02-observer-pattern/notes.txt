@@ -1,0 +1,23 @@
+->  Publishers + subscribers = Observer pattern
+
+->  We call publisher the "Subject" and the subscribers the "observers".
+
+->  The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+
+->  The subject and observers define the one-to-many relationship. We have one subject, who notifies many observers when something in the subject changes. The observers are dependent on the subject - when the subject's state changes, the observers are notified.
+
+->  With the Observer Pattern, the Subject is the object that contains the state and controls it.
+    So, there is ONE subject with state. The observers, on the other hand, use the state, even if they don't own it.
+    There are many observers, and they rely on the Subject to tell them when its state changes.
+    So there is a relationship between the ONE Subject to the MANY Observers.
+
+->  Because the subject is the sole owner of that data, the observers are dependent on the subject to update them when the data changes. This leads to a cleaner OO design than allowing many objects to control the same data.
+
+->  When two objetcs are loosely coupled, they can interact, but they typically have very little knowledge of each other. The Observer Pattern is a great example of loose coupling.
+    -   The only thing the subject knows about an observer is that it implements a certain interface(the Observer interface).
+    -   We can add new observers at any time. We can remove observers at any time.
+    -   We never need to modify the subject to add new types of observers. The subject doesn't care; it will deliver notifications to any object that implements the observer interface.
+    -   We can reuse subjects or observers independently of each other.
+    -   Changes to either the subject or an observer will not affect the other. Because the two are loosely coupled, we are free to make changes to either, as long as the objects still meet their obligations to implement the Subject or Observer interface.
+
+

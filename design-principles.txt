@@ -11,3 +11,6 @@
         -  Creating systems using composition gives you a lot more of flexibility. 
         -  Not only does it let you encapsulate a family of algorithms into their own set of classes, but it also lets you "change behavior at runtime" as long as the object you're composing with implements the correct behavior interface.
         - Composition is used in many design patterns.
+
+->  Strive for loosely coupled designs between objects that interact.
+        - Loosley coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
