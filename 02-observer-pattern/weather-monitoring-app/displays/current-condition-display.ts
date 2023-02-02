@@ -16,9 +16,9 @@ export default class CurrentConditionsDisplay
     this.weatherData.registerObserver(this);
   }
 
-  update(temperature: number, humidity: number, pressure: number): void {
-    this.temperature = temperature;
-    this.humidity = humidity;
+  update(): void {
+    this.temperature = this.weatherData.getTemperature();
+    this.humidity = this.weatherData.getHumidity();
     this.display();
   }
 

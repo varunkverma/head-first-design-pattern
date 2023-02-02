@@ -14,6 +14,18 @@ export default class WeatherData implements Subject {
     this.pressure = 0;
   }
 
+  getTemperature(): number {
+    return this.temperature;
+  }
+
+  getHumidity(): number {
+    return this.humidity;
+  }
+
+  getPressure(): number {
+    return this.pressure;
+  }
+
   registerObserver(o: Observer): void {
     this.observers.push(o);
   }
@@ -24,7 +36,7 @@ export default class WeatherData implements Subject {
 
   notifyObservers(): void {
     for (let observer of this.observers) {
-      observer.update(this.temperature, this.humidity, this.pressure);
+      observer.update();
     }
   }
 

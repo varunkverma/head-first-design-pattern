@@ -20,3 +20,4 @@
 
 -> Knowing concepts like abstraction, inheritance and polymorphism doesn't make you a good OO designer. A design guru thinks about how to create flexible designs that are maintainable and can cope with change.
 
+->  One of the advantages of knowing design patterns is recognizing and quickly understanding the design motivation in your favorite libraries.

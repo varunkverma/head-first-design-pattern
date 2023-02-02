@@ -20,4 +20,9 @@
     -   We can reuse subjects or observers independently of each other.
     -   Changes to either the subject or an observer will not affect the other. Because the two are loosely coupled, we are free to make changes to either, as long as the objects still meet their obligations to implement the Subject or Observer interface.
 
+->  The Observer Pattern is one of the most common patterns in use, and you'll find plenty of patterns being used in many libraries and frameworks.
+    -   If we look at the Java Developement Kit(JDK), both the JavaBeans and Swing libraries make use of the Observer Pattern.
+    -   It's used in JavaScript's events and in Cocoa and Swift's Key-Value Observing protocol.
 
+->  Now, whether we pull or push the data to the Observer is an implementation detail, bit in a lot of cases it makes sense to let Observers retrieve the data they need rather than passing more and more data to them through the update() methods.
+    -   All we need to do is make sure the Subject has getter methods for its data, and then change our Observers to use them to pull the data that's appropriate for their needs.
