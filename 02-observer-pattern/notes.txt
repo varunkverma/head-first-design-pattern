@@ -26,3 +26,5 @@
 
 ->  Now, whether we pull or push the data to the Observer is an implementation detail, bit in a lot of cases it makes sense to let Observers retrieve the data they need rather than passing more and more data to them through the update() methods.
     -   All we need to do is make sure the Subject has getter methods for its data, and then change our Observers to use them to pull the data that's appropriate for their needs.
+
+->  The Observer Pattern is related to the Publish/Subscribe Pattern, which is for more complex situations with multiple Subjetcs and/or multiple message types.
