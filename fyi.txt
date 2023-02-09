@@ -11,7 +11,7 @@
 
 ->  We always spend more time maintaining and changing software than on initial development.
 
-->  Design Patterns give you a shared vocabulary with other developers. Once you've got the vocabulary, you can more easilty communicate with other developers and inspire those who don't know patterns to start learning them. It also elevates you thinking about architecture by letting you "think at the pattern level", not the nitty-gritty object level.
+->  Design Patterns give you a shared vocabulary with other developers. Once you've got the vocabulary, you can more easily communicate with other developers and inspire those who don't know patterns to start learning them. It also elevates you thinking about architecture by letting you "think at the pattern level", not the nitty-gritty object level.
     When you communicate with another developer or your team using patterns, you are communicating not just a pattern name but a whole set of qualities, characteristics, and constraints that the pattern represents.
     
 ->  Design patterns don't go directly into your code, they first go into your Brain. Once you've loaded your brain with a good working knowledge of patterns, you can then start to apply them to your new designs, and rework your old code when you find it's degrading into an inflexible mess.
@@ -21,3 +21,23 @@
 -> Knowing concepts like abstraction, inheritance and polymorphism doesn't make you a good OO designer. A design guru thinks about how to create flexible designs that are maintainable and can cope with change.
 
 ->  One of the advantages of knowing design patterns is recognizing and quickly understanding the design motivation in your favorite libraries.
+
+->  There are ways of "inheriting" behvaior at runtime through composition and delegation.
+    
+    When you inherit behavior by subclassing, that behavior is set statically at compile time. In addition, all subsclasses must inherit the same behavior.
+    
+    If, however, I can extend an object's behavior through composition, then you can do this dynamically at runtime.
+
+    It is possible for me to add multiple new responsibilties to objects through this technique, including responsibilties that were not even thought of by the designer of the superclass. You don't need to touch their code.
+
+    By dynamically composing objects, I can add new functionality by writing new code rather than altering existing code.
+
+->  Many patterns give us time-tested designs that protect your code from being modified by supplying a means of extension.
+    For e.g., using the Decorator Pattern to follow the Open-Closed Principle.
+
+    Making OO design Flexible and open to extension without modifying exisiting code takes time and effort.
+    In general, we don't have the luxury of tying down every part of our designs (and it would be wasteful).
+    Following the Open-Closed Principle usually introduces new levels of abstraction, which adds complexity to our code.
+    You want to concentrate on those areas that are most likely to change in your designs and apply the principles here.
+
+->  

@@ -1,0 +1,36 @@
+->  Give objects new responsibilties without making any code changes to the underlying classes.
+
+->  Think of Decorator objects as "Wrappers".
+
+->  Decorators have the same supertype as the objects they decorate.
+
+    You can use one or more decorators to wrap an object.
+
+    Given that teh decorator has the same supertype as the object it decorates, we can pass around a decorated object in place of the original (wrapped) object.
+
+    The decorator adds its own behavior before and/or after delegating to the object it decorates to do the rest of the job.
+
+    Objects can be decorated at any time, so we can decorate objects dynamically with as many decorators as we like.
+
+->  The Decorator pattern attaches additional responsibilities to an object dynamically. 
+    Decorators provide a flexible alternative to subclassing for extending functionality.
+
+->  It's vital that the decorators have the same type as the objects they are going to decorate. So here we're using inheritance to achieve the type matching, but we aren't using inheritance to get behavior.
+
+    Decorators need the same "interface" as the components they wrap because they need to stand in place of the component.
+
+    When we compose a decorator with a component, we are adding new behavior. We are acquiring new behavior not by inheriting it from a superclass, but by composing objects together.
+
+->  If we rely on inheritance, then our behavior can only be determined statically at compile time.
+    In other words, we get only whatever behavior the superclass gives us or that we override.
+
+    We can implement new decorators at any time to add new behavior.
+    If we relied on inheritance, we'd have to go in and change existing code anytime we wanted new behavior.
+
+->  If you have code that relies on the concrete component's type, decorators will break that code.
+    You have to manage more objects with the Decorator Pattern.
+    
+    However, we typically create decorators by using other patterns like Factory and Builder.
+
+-> One of the downsides of the Decorator Pattern is that the designs using this pattern often result in a large number of small classes that can be overwhelming to a developer trying to use the Decorator-based API. 
+  
